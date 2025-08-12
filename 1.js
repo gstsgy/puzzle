@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         拼图
 // @namespace    http://tampermonkey.net/
-// @version      2024-09-25
-// @description  try to take over the world!
-// @author       You
+// @version      2025-08-12
+// @description  自动拼图脚本
+// @author       gstsgy
 // @match        https://cn.bing.com/spotlight/imagepuzzle*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=polyt.cn
 // @grant        none
@@ -111,7 +111,7 @@ async function start(solution){
             smartClick(targetEle);
         }
         resolve();
-      },Math.random()*1000))
+      },Math.random()*400+400))
     }
   } else {
     console.log("无解");
